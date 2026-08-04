@@ -34,6 +34,12 @@ export const profileConfig: ProfileConfig = {
 			showName: false,
 		},
 		{
+			name: "Bilibili",
+			icon: "simple-icons:bilibili",
+			url: "https://space.bilibili.com/1675307647",
+			showName: false,
+		},
+		{
 			name: "Email",
 			icon: "fa7-solid:envelope",
 			url: "mailto:3241380388@qq.com",
