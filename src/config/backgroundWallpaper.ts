@@ -90,7 +90,7 @@ export const backgroundWallpaper: BackgroundWallpaperConfig = {
 			titleSize: "4.5rem",
 			// 主页横幅副标题
 			subtitle: [
-				"你好，世界。",
+				"Hello World",
 			],
 			// 主页横幅副标题字体大小
 			subtitleSize: "1.5rem",
