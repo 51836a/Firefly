@@ -600,3 +600,14 @@ html {
   @apply text-sm text-(--text-secondary) text-center mb-2;
 }
 
+
+/* HIRO-S 自定义光标 */
+* {
+  cursor: url("/cursor/1.png") 0 0, auto;
+}
+input, textarea, select, [contenteditable="true"] {
+  cursor: text;
+}
+a, button, [role="button"], [onclick] {
+  cursor: pointer;
+}
