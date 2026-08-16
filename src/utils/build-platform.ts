@@ -48,7 +48,12 @@ export function detectBuildPlatform({
 	}
 	// ciName 自动识别
 	if (ciName?.trim()) {
-		return ciName.trim();
+		const normalized = ciName.trim();
+		// Cloudflare Pages / Workers 统一显示为 Cloudflare
+		if (normalized === "Cloudflare Workers" || normalized === "Cloudflare Pages") {
+			return "Cloudflare";
+		}
+		return normalized;
 	}
 	//补充EdgeOne Pages 和 ESA Pages 识别逻辑
 	if (hasNonEmptyEnv(env, "EDGEONE_PROJECT_ID")) {
