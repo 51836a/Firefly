@@ -2,7 +2,7 @@
 title: Hello World
 description: 这是我的第一篇博客文章
 published: 2026-08-27
-tags: [入门]
+tags: [Firefly]
 category: Firefly
 ---
 
