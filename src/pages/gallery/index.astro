@@ -1,4 +1,5 @@
 ---
+import { redirectTo404 } from "@/utils/redirect-utils";
 import { Icon } from "astro-icon/components";
 import AlbumCard from "@/components/pages/gallery/AlbumCard.astro";
 import { galleryConfig, siteConfig } from "@/config";
@@ -9,7 +10,7 @@ import { getAlbumCover, scanAlbumPhotos } from "@/utils/gallery-utils";
 
 // 检查页面是否启用
 if (!siteConfig.pages.gallery) {
-	return Astro.redirect("/404/");
+	return redirectTo404();
 }
 
 const title = i18n(I18nKey.gallery);

@@ -1,4 +1,5 @@
 ---
+import { redirectTo404 } from "@/utils/redirect-utils";
 import { getEntry, render } from "astro:content";
 import Comment from "@components/comment/index.astro";
 import Markdown from "@components/common/Markdown.astro";
@@ -15,7 +16,7 @@ import MainGridLayout from "@/layouts/MainGridLayout.astro";
 
 // 检查页面是否启用
 if (!siteConfig.pages.friends) {
-	return Astro.redirect("/404/");
+	return redirectTo404();
 }
 
 const friendsPost = await getEntry("spec", "friends");

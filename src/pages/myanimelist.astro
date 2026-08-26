@@ -1,4 +1,5 @@
 ---
+import { redirectTo404 } from "@/utils/redirect-utils";
 import { Icon } from "astro-icon/components";
 import MalGrid from "@/components/pages/mal/MalGrid.svelte";
 import { siteConfig } from "@/config";
@@ -16,7 +17,7 @@ import { filterNsfw, isMalNsfw } from "@/utils/nsfw-utils";
 
 // 检查页面是否启用
 if (!siteConfig.pages.mal) {
-	return Astro.redirect("/404/");
+	return redirectTo404();
 }
 
 // 获取构建时间
