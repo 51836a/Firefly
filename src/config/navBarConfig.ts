@@ -107,12 +107,6 @@ const getDynamicNavBarConfig = (): NavBarConfig => {
 				icon: "fa7-brands:github",
 			},
 			{
-				name: "QQ交流群",
-				url: "https://qm.qq.com/q/q0JrzdQ5DG",
-				external: true,
-				icon: "fa7-brands:qq",
-			},
-			{
 				name: "Firefly文档",
 				url: "https://docs-firefly.cuteleaf.cn",
 				external: true,
