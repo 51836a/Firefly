@@ -2,6 +2,7 @@
 import { Icon } from "astro-icon/components";
 import ProjectCard from "@/components/pages/projects/ProjectCard.astro";
 import { siteConfig } from "@/config";
+import { redirectTo404 } from "@/utils/redirect-utils";
 import I18nKey from "@/i18n/i18nKey";
 import { i18n } from "@/i18n/translation";
 import MainGridLayout from "@/layouts/MainGridLayout.astro";
@@ -15,7 +16,7 @@ import { getFileDirFromPath, removeFileExtension } from "@/utils/url-utils";
 
 // 检查页面是否启用
 if (!siteConfig.pages.projects) {
-	return Astro.redirect("/404/");
+	return redirectTo404();
 }
 
 const title = i18n(I18nKey.projects);
