@@ -56,11 +56,11 @@ export const commentConfig: CommentConfig = {
 		// 设置 Giscus 评论系统仓库
 		repo: "51836a/Firefly",
 		// 设置 Giscus 评论系统仓库ID
-		repoId: "R_kgDOTrI1mA",
+		repoId: "R_kgDOUsiqpQ",
 		// 设置 Giscus 评论系统分类
 		category: "Announcements",
 		// 获取 Giscus 评论系统分类ID
-		categoryId: "DIC_kwDOTrI1mM4DCmSv",
+		categoryId: "DIC_kwDOUsiqpc4DGbWj",
 		// 获取 Giscus 评论系统映射方式
 		mapping: "pathname",
 		// 获取 Giscus 评论系统严格模式
