@@ -1,5 +1,5 @@
 ---
-title: Hello World
+title: Hello-World
 description: 这是我的第一篇博客文章
 published: 2026-08-27
 tags: [Firefly]
