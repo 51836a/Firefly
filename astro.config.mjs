@@ -55,6 +55,12 @@ import { remarkReadingTime } from "./src/plugins/remark-reading-time.mjs";
 import { remarkWikiLink } from "./src/plugins/remark-wiki-link.js";
 import { collectUsedFontCssVars } from "./src/utils/fontHelper";
 
+// 固定侧边栏「构建平台」的显示名。
+// 本地（Windows）构建时 ci-info 只能判定“是 CI 环境，但认不出是哪个 CI”，
+// 会走到兜底文案 Unknown CI；这里显式覆盖，让本地构建与 Cloudflare 构建机显示一致。
+// 已显式设置该变量时不覆盖。
+process.env.FIREFLY_BUILD_PLATFORM ||= "Cloudflare";
+
 if (process.env.NODE_ENV === "development") {
 	setMaxListeners(20);
 }
